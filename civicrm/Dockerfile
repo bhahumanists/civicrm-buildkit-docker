@@ -81,7 +81,7 @@ RUN pecl install imagick \
   && docker-php-ext-enable imagick
 
 # Install xdebug PECL extension
-RUN pecl install xdebug
+#RUN pecl install xdebug
 
 RUN a2enmod rewrite
 
