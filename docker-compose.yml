@@ -1,7 +1,7 @@
 version: "3.6"
 services:
   civicrm:
-    image: bhawest/cividist-base
+    image: bhawest/cividist-base-2
     hostname: civicrm
     environment:
       TERM: xterm-color
