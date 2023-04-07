@@ -1,0 +1,2 @@
+# Make sure all text files use linux line endings (because Docker)
+* text=auto eol=lf
