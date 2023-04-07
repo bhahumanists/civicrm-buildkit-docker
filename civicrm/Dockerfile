@@ -134,7 +134,7 @@ RUN rm /buildkit/app/civicrm.settings.d/100-mail.php
 
 COPY civibuild.conf /buildkit/app/civibuild.conf
 
-COPY apache24-vhost.php /buildkit/build/.amp/apache24-vhost.php
+COPY --chown=buildkit:buildkit apache24-vhost.php /buildkit/build/.amp/apache24-vhost.php
 
 USER root
 
