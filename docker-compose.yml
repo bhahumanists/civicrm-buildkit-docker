@@ -6,6 +6,12 @@ services:
     environment:
       TERM: xterm-color
       APACHE_RUN_USER: buildkit
+    build:
+      context: .
+      args:
+        UID: ${UID:-1000}
+        GID: ${GID:-1000}
+    user: "${UID}:${GID}"
     links:
       - mysql
     ports:
