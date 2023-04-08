@@ -23,4 +23,7 @@ if [ "${1#-}" != "$1" ]; then
 	set -- apache2-foreground "$@"
 fi
 
+# take ownership of build folder so we can write to it
+chown -R buildkit:buildkit /buildkit/build
+
 exec "$@"
