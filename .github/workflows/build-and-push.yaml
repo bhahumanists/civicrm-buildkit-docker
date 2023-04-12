@@ -3,6 +3,7 @@ name: Build and push civi buildkit image
 on:
   schedule:
     - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
   docker:
