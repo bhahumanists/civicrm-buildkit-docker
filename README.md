@@ -1,5 +1,9 @@
 # CiviCRM buildkit on Docker
 
+## Humanists UK fork
+This is a fork of [Michael McAndrew's brilliant docker image](https://lab.civicrm.org/michaelmcandrew/civicrm-buildkit-docker) for buildkit. We build a nightly docker image that (as of spring 2023) we use to run cividist and build our customised repo - whenever a new version comes out.
+
+# Original readme
 [CiviCRM buildkit on Docker](https://hub.docker.com/r/michaelmcandrew/civicrm-buildkit) is thin wrapper around CiviCRM's buildkit, allowing it to be run in a docker container.
 
 Note: CiviCRM buildkit is primarily a development tool - it is not designed for production hosting. If you are looking for CiviCRM docker containers designed for hosting, see https://lab.3sd.io/tools/civicrm-buildkit.
